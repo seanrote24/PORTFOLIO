@@ -484,3 +484,23 @@ footer {
   .hamburger { display:flex; }
   .form-row { grid-template-columns:1fr; }
 }
+
+@media (max-width: 1100px) {
+  /* existing rules... */
+
+  /* ─── DISABLE CUSTOM CURSOR ON MOBILE ─── */
+  body {
+    cursor: auto;
+  }
+
+  .service-card,
+  .hamburger,
+  .btn-submit {
+    cursor: pointer;
+  }
+
+  #cursor,
+  #cursor-ring {
+    display: none;
+  }
+}
